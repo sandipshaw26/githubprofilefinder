@@ -1,0 +1,90 @@
+:root{
+    --background: #fff;
+    --text-primary: #000;
+    --button-bg: #000;
+    --button-text: #fff;
+}
+[data-theme = 'dark']{
+    --background: #000;
+    --text-primary: #fff;
+    --button-bg: #fff;
+    --button-text: #000;
+}
+button.btn{
+    width: max-content;
+    margin: auto;
+    padding: 14px;
+    border-radius: 10px;
+    background:var(--button-bg);
+    color: var(--button-text);
+}
+.gitprofile-container{
+    margin: auto;
+}
+.nav{
+    display: flex;
+    position: fixed;
+    background-color: var(--background);
+    width: 100vw;
+    box-shadow: var(--button-text);
+}
+input.inp{
+    padding: 14px;
+    border-radius: 10px;
+}
+button.search{
+    padding: 14px;
+    border-radius: 10px;
+    background:var(--button-bg);
+    color: var(--button-text);
+}
+button:hover{
+    scale: 1.15;
+    background: aqua;
+    color: var(--button-text);
+    transition: all 0.2ms ease;
+}
+.lightdark{
+background-color: var(--background);
+transition: all 0.5s;
+display: flex;
+flex-direction: column;
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--text-primary) !important;
+}
+.user img{
+border:2px var(--text-primary) solid !important;
+}
+/* .lightdark .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+} */
+/*  
+.lightdark .container p{
+    color: var(--text-primary);
+    font-size: 40px;
+    margin: auto;
+}
+.lightdark .container button{
+    background-color: var(--button-bg);
+    border: 1px solid var(--button-bg);
+    color: var(--button-text);
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+} */
+.foot footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    line-height: 2;
+    text-align: center;
+    color: var(--text-primary);
+}
